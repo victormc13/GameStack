@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Category />} />
-        <Route path='/recently-released' element={<RecentlyReleased />} />
-        <Route path='/popular' element={<Popular />} />
-        <Route path='/hall-of-fame' element={<HallOfFame />} />
-        <Route path='/upcoming' element={<Upcoming />} />
+        <Route path="/" element={<Category />} />
+        <Route path="/recently-released" element={<RecentlyReleased />} />
+        <Route path="/popular" element={<Popular />} />
+        <Route path="/hall-of-fame" element={<HallOfFame />} />
+        <Route path="/upcoming" element={<Upcoming />} />
       </Routes>
     </div>
 

@@ -1,10 +1,7 @@
+const Popular = () => (
+  <div>
+    <h1>Popular</h1>
+  </div>
+);
 
-const Popular = () => {
-  return (
-    <div>
-      <h1>Popular</h1>
-    </div>
-  )
-}
-
-export default Popular
+export default Popular;

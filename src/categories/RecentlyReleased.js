@@ -1,9 +1,7 @@
-const RecentlyReleased = () => {
-  return (
-    <div>
-      <h1>Recently Released</h1>
-    </div>
-  )
-}
+const RecentlyReleased = () => (
+  <div>
+    <h1>Recently Released</h1>
+  </div>
+);
 
-export default RecentlyReleased
+export default RecentlyReleased;
