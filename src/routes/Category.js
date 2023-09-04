@@ -2,22 +2,20 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Category = () => {
+  const pages = [
+    {to: 'recently-released', name: 'Recently Released'},
+    {to: 'popular', name: 'Popular'},
+    {to: 'hall-of-fame', name: 'Hall Of Fame'},
+    {to: 'upcoming', name: 'Upcoming'},
+  ]
+
   return (
     <div>
       <h2>Category</h2>
       <ul>
-        <li>
-          <NavLink to='/category1'>Category1</NavLink>
-        </li>
-        <li>
-          <NavLink to='/category2'>Category2</NavLink>
-        </li>
-        <li>
-          <NavLink to='/category3'>Category3</NavLink>
-        </li>
-        <li>
-          <NavLink to='/category4'>Category4</NavLink>
-        </li>
+        {pages.map(page => (
+          <li key={page.to}><NavLink to={`/${page.to}`}>{page.name}</NavLink></li>
+        ))}
       </ul>
     </div>
   )
