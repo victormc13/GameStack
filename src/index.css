@@ -1,16 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,12 +26,89 @@ code {
     Menlo,
     Monaco,
     Consolas,
-    'Courier New',
+    "Courier New",
     monospace;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  background-color: cadetblue;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
   display: grid;
   place-items: center;
+  background-color: cadetblue;
+  font-size: 3.5rem;
+}
+
+.genres-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.category-list {
+  text-align: center;
+  height: 68.8vh;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.genres-container li {
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.category-list li:nth-child(1),
+.category-list li:nth-child(4) {
+  background-color: #0664c1;
+  color: white;
+}
+
+.category-list li:nth-child(1):hover,
+.category-list li:nth-child(4):hover {
+  background-color: rgb(8 47 73);
+}
+
+.genres-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: url(assets/background-genres.png) center / cover no-repeat;
+}
+
+.genres-container img {
+  width: 250px;
+  height: 150px;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
