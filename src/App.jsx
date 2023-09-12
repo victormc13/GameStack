@@ -7,6 +7,7 @@ import GameDetails from './categories/genres/GameDetails';
 import Platforms from './categories/platforms/Platforms';
 import Platform from './categories/platforms/Platform';
 import Creators from './categories/creators/Creators';
+import Creator from './categories/creators/Creator';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Route path="/platforms/:platformId" element={<Platform />} />
         <Route path="/platforms/:platformId/:gameId" element={<GameDetails />} />
         <Route path="/creators" element={<Creators />} />
-        <Route path="/creators/:creatorId" element={<h1>creatorsss</h1>} />
+        <Route path="/creators/:creatorId" element={<Creator />} />
+        <Route path="/creators/:creatorId/:gameId" element={<GameDetails />} />
       </Routes>
     </div>
   );
