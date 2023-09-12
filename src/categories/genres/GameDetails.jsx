@@ -47,7 +47,7 @@ const GameDetails = () => {
         </article>
       </section>
       <h3 className="text-2xl font-bold bg-white text-sky-400 place-self-start text-left p-2">Description:</h3>
-      <section className="max-h-fit flex justify-center m-3 text-xl md:text-2xl p-3 text-justify bg-slate-900 text-white">{game.description_raw}</section>
+      <section className="max-h-fit flex justify-center m-3 text-xl md:text-2xl p-3 text-justify bg-slate-900 text-white rounded-md">{game.description_raw}</section>
     </div>
   );
 };
