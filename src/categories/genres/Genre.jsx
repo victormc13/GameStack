@@ -14,7 +14,7 @@ const Genre = () => {
 
   return (
     <div>
-      <h2 className="text-center text-slate-900 font-bold">{selectedGenre[0].name}</h2>
+      <h2 className="text-center bg-white text-slate-900 font-bold">{selectedGenre[0].name}</h2>
       <img className="w-full" src={selectedGenre[0].image_background} alt="genre" width="200px" />
       <ul className="genres-container text-white">
         {games.map((game) => (

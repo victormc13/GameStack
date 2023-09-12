@@ -13,8 +13,8 @@ const GameDetails = () => {
   }, [dispatch, gameId]);
 
   return (
-    <div className="h-fit">
-      <h2 className="text-center text-slate-900 font-bold">{game.name}</h2>
+    <div className="min-h-fit flex-col">
+      <h2 className="text-center bg-white text-slate-900 font-bold">{game.name}</h2>
       <section className="grid bg-slate-900 text-white md:grid-cols-2 md:grid-rows-1">
         <picture className="flex justify-center bg-black">
           <img src={game.background_image} alt={game.name} width="500px" />
@@ -39,14 +39,15 @@ const GameDetails = () => {
             ))}
           </ul>
           <ul className="text-lg font-bold display-grid">
-            <h3 className=" text-2xl font-bold text-sky-400 place-self-start text-left">Genres:</h3>
+            <h3 className="text-2xl font-bold text-sky-400 place-self-start text-left">Genres:</h3>
             {game.genres && game.genres.map((genre) => (
               <li key={genre.id} className="text-sm text-center bg-gradient-to-r from-cyan-700 to-blue-900 p-1 m-1 rounded-lg">{genre.name}</li>
             ))}
           </ul>
         </article>
       </section>
-      <section className="max-h-fit flex justify-center text-xl md:text-2xl p-3 text-justify bg-slate-900 text-white">{game.description_raw}</section>
+      <h3 className="text-2xl font-bold bg-white text-sky-400 place-self-start text-left p-2">Description:</h3>
+      <section className="max-h-fit flex justify-center m-3 text-xl md:text-2xl p-3 text-justify bg-slate-900 text-white">{game.description_raw}</section>
     </div>
   );
 };

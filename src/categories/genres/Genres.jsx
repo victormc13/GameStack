@@ -16,7 +16,7 @@ const Genres = () => {
   };
 
   return (
-    <div className="genres-section">
+    <div className="genres-section bg-white">
       <h2 className="text-slate-900 font-bold">Genres</h2>
       <ul className="genres-container text-white">
         {genres.map((genre) => (
