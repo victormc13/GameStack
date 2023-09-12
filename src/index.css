@@ -121,3 +121,10 @@ ul {
   background: url(assets/background-platforms.png) repeat-y center center;
   background-size: 100%;
 }
+
+.creators-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: url(assets/background-creators.png) repeat-y center center;
+  background-size: 100%;
+}
