@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 import getCreators from './fetchCreators';
 
 const initialState = {
   creators: [],
   isLoading: true,
   error: undefined,
-}
+};
 
 const creatorsSlice = createSlice({
   name: 'creators',
@@ -22,8 +22,8 @@ const creatorsSlice = createSlice({
       .addCase(getCreators.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload;
-      })
-  }
-})
+      });
+  },
+});
 
 export default creatorsSlice.reducer;

@@ -11,6 +11,6 @@ const getCreators = createAsyncThunk('creators/getCreators', async (thunkAPI) =>
   } catch (error) {
     return thunkAPI.rejectWithValue({ message: error.message });
   }
-})
+});
 
 export default getCreators;
