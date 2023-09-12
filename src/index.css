@@ -50,7 +50,8 @@ body {
 }
 
 .genres-section,
-.platforms-section {
+.platforms-section,
+.creators-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -76,7 +77,8 @@ ul {
 }
 
 .genres-container li,
-.platforms-container li {
+.platforms-container li,
+.creators-container li {
   margin: 1rem;
   border-radius: 1rem;
   background-color: black;
@@ -102,7 +104,8 @@ ul {
 }
 
 .genres-container img,
-.platforms-container img {
+.platforms-container img, 
+.creators-container img {
   width: 250px;
   height: 150px;
 }
