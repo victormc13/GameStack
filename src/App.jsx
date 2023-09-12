@@ -21,6 +21,7 @@ function App() {
         <Route path="/platforms/:platformId" element={<Platform />} />
         <Route path="/platforms/:platformId/:gameId" element={<GameDetails />} />
         <Route path="/creators" element={<Creators />} />
+        <Route path="/creators/:creatorId" element={<h1>creatorsss</h1>} />
       </Routes>
     </div>
   );
