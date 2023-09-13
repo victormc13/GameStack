@@ -18,8 +18,8 @@ const Genre = () => {
       <img className="w-full" src={selectedGenre[0].image_background} alt="genre" width="200px" />
       <ul className="genres-container text-white">
         {games.map((game) => (
-          <li key={game.id} className="hover:bg-sky-800 w-60 h-28 p-3 flex justify-center content-center align-middle">
-            <NavLink to={`${game.id}`} className="self-center" onClick={scrollToTop}>
+          <li key={game.id} className="hover:bg-sky-800 w-60 h-28 flex justify-center content-center">
+            <NavLink to={`${game.id}`} className="self-center w-96" onClick={scrollToTop}>
               <p className="font-bold">{game.name}</p>
               <i className="text-lg">
                 Score:

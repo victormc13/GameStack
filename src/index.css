@@ -82,8 +82,7 @@ ul {
   margin: 1rem;
   border-radius: 1rem;
   background-color: black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255);
 }
 
 .category-list li:nth-child(1),
@@ -100,6 +99,7 @@ ul {
 .genres-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: center;
   background: url(assets/background-genres.png) center / cover no-repeat;
 }
 
