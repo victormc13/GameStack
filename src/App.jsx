@@ -34,6 +34,7 @@ function App() {
         {/* Developers page */}
         <Route path="/developers" element={<Developers />} />
         <Route path="/developers/:developerId" element={<Developer />} />
+        <Route path="/developers/:developerId/:gameId" element={<GameDetails />} />
       </Routes>
     </div>
   );
