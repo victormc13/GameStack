@@ -11,7 +11,6 @@ const Developers = () => {
     dispatch(getDevelopers());
   }, [dispatch]);
 
-  console.log('Developesr page for now', developers);
   return (
     <div className="developers-section bg-white">
       <h2 className="text-slate-900 font-bold">Developers</h2>

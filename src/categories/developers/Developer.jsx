@@ -10,7 +10,6 @@ const Developer = () => {
   );
   const games = selectedDeveloper.map((developer) => developer.games)[0];
 
-  console.log('Developer page for now');
   return (
     <div>
       <h2 className="text-center bg-white text-slate-900 font-bold">
