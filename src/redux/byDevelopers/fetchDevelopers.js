@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const apiKey = 'f64740ecca36488fb60f955ce2dc76fb';
 const url = `https://api.rawg.io/api/developers?key=${apiKey}`;
 
-const fetchDevelopers = createAsyncThunk('developers/fetchDevelopers', async (thunkAPI) => {
+const getDevelopers = createAsyncThunk('developers/getDevelopers', async (thunkAPI) => {
   try {
     const resp = await fetch(url);
     const data = await resp.json();
@@ -13,4 +13,4 @@ const fetchDevelopers = createAsyncThunk('developers/fetchDevelopers', async (th
   }
 });
 
-export default fetchDevelopers;
+export default getDevelopers;
