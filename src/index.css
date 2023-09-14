@@ -111,6 +111,7 @@ ul {
 .developers-container img {
   width: 250px;
   height: 150px;
+  object-fit: cover;
 }
 
 .display-grid {

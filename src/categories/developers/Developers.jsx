@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import getDevelopers from '../../redux/byDevelopers/fetchDevelopers';
 
 const Developers = () => {
@@ -17,8 +18,10 @@ const Developers = () => {
       <ul className="developers-container text-white">
         {developers.map((developer) => (
           <li key={developer.id} className="hover:bg-sky-800 cursor-pointer">
-            <p className="text-2xl mb-3">{developer.name}</p>
-            <img src={developer.image_background} alt={developer.name} width="200px" />
+            <NavLink to={`${developer.id}`}>
+              <p className="text-md font-bold mb-3 pt-3">{developer.name}</p>
+              <img src={developer.image_background} alt={developer.name} />
+            </NavLink>
           </li>
         ))}
       </ul>
