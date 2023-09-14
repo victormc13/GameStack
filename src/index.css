@@ -51,7 +51,8 @@ body {
 
 .genres-section,
 .platforms-section,
-.creators-section {
+.creators-section,
+.developers-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -78,7 +79,8 @@ ul {
 
 .genres-container li,
 .platforms-container li,
-.creators-container li {
+.creators-container li,
+.developers-container li {
   margin: 1rem;
   border-radius: 1rem;
   background-color: black;
@@ -105,7 +107,8 @@ ul {
 
 .genres-container img,
 .platforms-container img,
-.creators-container img {
+.creators-container img,
+.developers-container img {
   width: 250px;
   height: 150px;
 }
@@ -126,5 +129,12 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background: url(assets/background-creators.png) repeat-y center center;
+  background-size: 100%;
+}
+
+.developers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: url(assets/background-developers.png) repeat-y center center;
   background-size: 100%;
 }
